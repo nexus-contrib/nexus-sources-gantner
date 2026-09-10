@@ -104,9 +104,11 @@ public class Gantner : StructuredFileDataSource<GantnerSettings, GantnerAddition
                         var resource = new ResourceBuilder(id: resourceId)
                             .WithUnit(gantnerVariable.Unit)
                             .WithGroups(fileSourceId)
-                            .WithFileSourceId(fileSourceId)
                             .WithOriginalName(gantnerVariable.Name)
-                            .AddRepresentation(representation)
+                            .AddRepresentations(new Dictionary<Representation, string>
+                            {
+                                [representation] = fileSourceId
+                            })
                             .Build();
 
                         catalogBuilder.AddResource(resource);

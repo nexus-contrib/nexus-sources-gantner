@@ -8,7 +8,7 @@
     <PackageReference Include="Nexus.Extensibility" Version="2.0.0-beta.50">
       <ExcludeAssets>runtime;native</ExcludeAssets>
     </PackageReference>
-    <PackageReference Include="Nexus.Sources.StructuredFile" Version="2.0.0-beta.40" />
+    <PackageReference Include="Nexus.Sources.StructuredFile" Version="2.0.0-beta.44" />
     <PackageReference Include="UDBF.NET" Version="2.2.3" />
   </ItemGroup>
 
