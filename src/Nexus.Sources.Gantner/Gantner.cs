@@ -124,7 +124,7 @@ public class Gantner : StructuredFileDataSource<GantnerSettings, GantnerAddition
 
     protected override Task ReadAsync(
         ReadInfo<GantnerAdditionalFileSourceSettings> info,
-        ReadRequest[] readRequests,
+        StructuredFileReadRequest[] readRequests,
         CancellationToken cancellationToken
     )
     {
